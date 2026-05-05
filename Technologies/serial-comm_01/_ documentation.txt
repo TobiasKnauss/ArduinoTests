@@ -1,0 +1,8 @@
+--------------------------------------------------------------------------------
+serial-comm_01
+--------------------------------------------------------------------------------
+Programm-Zykluszeit 100 ms.
+
+Zweck:
+- Festgelegte Daten über SERIAL senden, um den elektrischen Datenfluss analysieren zu können, z.B. mit einem Oszilloskop.
+- Die Datenübertragungsrate und die Datenwortkonfiguration können auf verschiedene Werte konfiguriert werden.

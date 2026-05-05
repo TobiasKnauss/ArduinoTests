@@ -1,0 +1,7 @@
+--------------------------------------------------------------------------------
+blink_01b
+--------------------------------------------------------------------------------
+Programm-Zykluszeit 0 ms.
+
+Zweck:
+- Mit maximaler Frequenz blinken. Der Blinkvorgang ist minimal ungleichmäßig.

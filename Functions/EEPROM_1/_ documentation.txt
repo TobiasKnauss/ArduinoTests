@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+EEPROM_1
+--------------------------------------------------------------------------------
+
+Zweck:
+- Lesen und Anzeigen des kompletten Inhalts des EEPROMs.
+- Test der Funktionen
+  - EEPROM.length()
+  - EEPROM[]

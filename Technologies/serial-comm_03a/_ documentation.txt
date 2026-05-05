@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------
+board1_Astar328PB
+--------------------------------------------------------------------------------
+Programm-Zykluszeit 100 ms.
+
+Zweck:
+- Daten (einzelne Bytes) über SERIAL empfangen und an SERIAL1 senden.
+- Daten (einzelne Bytes) über SERIAL1 empfangen und an SERIAL senden.
+- Zyklisch blinken (1 Hz)
+- Wenn in einem Programmzyklus ein Byte empfangen wird (Quelle egal), dann 1/2 x blinken (Polarität ändern).
+Das Programm arbeitet als eine bidirektionale Weiterleitung der empfangenen Daten.
+
+--------------------------------------------------------------------------------
+board2_ArduinoUnoR3
+--------------------------------------------------------------------------------
+Programm-Zykluszeit: 20 ms
+
+Zweck:
+- Daten (einzelne Bytes) über SERIAL empfangen, incrementieren (+1) falls Wert im Bereich [0x20..0x7E] und zurücksenden.
+- Zyklisch blinken (1 Hz)
+- Wenn in einem Programmzyklus ein Byte empfangen wird, dann 1/2 x blinken (Polarität ändern).
+Das Programm arbeitet als Echo mit Inkrementierung.

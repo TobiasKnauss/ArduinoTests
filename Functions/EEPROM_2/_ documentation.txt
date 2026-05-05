@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+EEPROM_2
+--------------------------------------------------------------------------------
+
+Zweck:
+- Schreiben von Variablen verschiedenen Typs in den EEPROM:
+  - byte-weise mittels EEPROM.write()
+  - als Ganzes mittels EEPROM.put()
+- Anzeige des EEPROM-Inhalts nach jedem Schreib-Block.

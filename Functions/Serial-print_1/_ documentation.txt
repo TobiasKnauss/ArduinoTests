@@ -1,0 +1,17 @@
+--------------------------------------------------------------------------------
+Serial-print_1
+--------------------------------------------------------------------------------
+
+Zweck:
+- Test der print()-Funktionen aus der Serial-Klasse,
+  - Serial.print()
+  - Serial.println()
+- Test der eigenen Erweiterungen (Konstanten) zur formatierten Ausgabe von Zahlen:
+  - BIN2
+  - BIN4
+  - BIN8
+  - BIN16
+  - BIN32
+  - HEX2
+  - HEX4
+  - HEX8

@@ -1,0 +1,12 @@
+--------------------------------------------------------------------------------
+FastCRC_1
+--------------------------------------------------------------------------------
+
+Zweck:
+- Test der Funktionen aus der FastCRC-Bibliothek:
+  - FastCRC8.maxim()
+  - FastCRC8.maxim_upd()
+  - FastCRC16.modbus()
+  - FastCRC16.modbus_upd()
+  - FastCRC32.crc32()
+  - FastCRC32.crc32_upd()
