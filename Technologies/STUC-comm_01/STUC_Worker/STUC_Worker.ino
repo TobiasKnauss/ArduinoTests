@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <Streaming.h>
 #include <STUC.h>
+#include <StucData.h>
 
 const uint8_t c_BufferDefaultValue = 0xDD;
 
@@ -11,8 +12,8 @@ uint8_t m_PayloadRecvBuffer[20];
 uint8_t m_SendBuffer[50];
 uint8_t m_ReceiveBuffer[80];
 
-uint32_t          m_WorkerDeviceId = 0x63691402;
-EStucChecksumType m_ChecksumType   = EStucChecksumType::CRC16;
+uint32_t            m_WorkerDeviceId = 0x63691402;
+STUC::EChecksumType m_ChecksumType   = STUC::EChecksumType::CRC16;
 
 uint16_t  m_ReceiveBufferWriteIndex = 0;
 uint16_t  m_ReceiveBufferReadIndex  = 0;
@@ -40,7 +41,9 @@ void setup ()
   Serial << F("ReceiveBuffer     Addr=") << _HEX4((uint16_t)m_ReceiveBuffer)     << " Len=" << sizeof (m_ReceiveBuffer) << endl;
   Memory_PrintLn (m_ReceiveBuffer, sizeof (m_ReceiveBuffer));
 
-  m_pSTUC = new STUC (m_WorkerDeviceId, true, true, false, m_ChecksumType);
+  EResult result;
+  m_pSTUC = new STUC (true, true, false, m_WorkerDeviceId, m_ChecksumType, result);
+  Serial << F("STUC.ctor() result=") << STUC::GetResultText (result) << endl;
 
   m_RequestData.SetPayloadInfo (m_PayloadRecvBuffer,
                                 sizeof (m_PayloadRecvBuffer));
@@ -72,8 +75,8 @@ void loop ()
   if (m_DataAvailable
   &&  !m_IsWorking)
   {
-    EStucMessageType  requestMessageType   = EStucMessageType::None;
-    uint8_t           requestMessageLength = 0;
+    STUC::EMessageType  requestMessageType   = STUC::EMessageType::None;
+    uint8_t             requestMessageLength = 0;
 
     // Analyse message in the received data
     result = m_pSTUC->AnalyseMessage (m_ReceiveBuffer,
@@ -129,7 +132,7 @@ void loop ()
                                    m_RequestData.MessageId,
                                    m_RequestData.Timestamp,
                                    m_RequestData.CommandId,
-                                   EStucMessageResult::Success);
+                                   STUC::EMessageResult::Success);
     replyData.SetPayloadInfo (m_PayloadSendBuffer, sizeof (m_PayloadSendBuffer), m_RequestData.PayloadLength);
 
     uint16_t replyMessageLength = 0;

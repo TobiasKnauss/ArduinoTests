@@ -1,8 +1,8 @@
 #include <Arduino.h>
-#include <EEPROM.h>
 #include <Streaming.h>
 
 #include <STUC.h>
+#include <StucData.h>
 
 const uint8_t c_BufferDefaultValue = 0xDD;
 
@@ -15,9 +15,9 @@ uint8_t m_PayloadRecvBuffer[20];
 uint8_t m_SendBuffer[50];
 uint8_t m_ReceiveBuffer[80];
 
-uint32_t          m_WorkerDeviceId      = 0x63691402;
-uint16_t          m_CommandId           = 0x1042;
-EStucChecksumType m_ChecksumType        = EStucChecksumType::CRC16;
+uint32_t            m_WorkerDeviceId      = 0x63691402;
+uint16_t            m_CommandId           = 0x1042;
+STUC::EChecksumType m_ChecksumType        = STUC::EChecksumType::CRC16;
 
 uint8_t   m_PayloadLength           = 0;
 uint16_t  m_ReceiveBufferWriteIndex = 0;
@@ -74,7 +74,7 @@ void loop ()
     Serial << F("PayloadSendBuffer: bytes used = ") << m_PayloadLength << endl;
     Memory_PrintLn (m_PayloadSendBuffer, sizeof (m_PayloadSendBuffer));
 
-    m_RequestData = StucData (EStucAction::Read, m_WorkerDeviceId, m_CommandId);
+    m_RequestData = StucData (STUC::EAction::Read, m_WorkerDeviceId, m_CommandId);
     m_RequestData.SetPayloadInfo (m_PayloadSendBuffer,
                                   sizeof (m_PayloadSendBuffer),
                                   m_PayloadLength);
@@ -122,7 +122,7 @@ void loop ()
   {
     StucData replyData;
     replyData.SetPayloadInfo (m_PayloadRecvBuffer, sizeof (m_PayloadRecvBuffer));
-    EStucMessageType replyMessageType   = EStucMessageType::None;
+    STUC::EMessageType replyMessageType   = STUC::EMessageType::None;
     uint8_t          replyMessageLength = 0;
 
     result = m_pSTUC->AnalyseMessage (m_ReceiveBuffer,

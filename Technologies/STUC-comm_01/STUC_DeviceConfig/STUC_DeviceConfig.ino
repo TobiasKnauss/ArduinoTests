@@ -5,11 +5,11 @@
 const bool     c_WriteConfig = false;  // <--- Set this flag to TRUE if the config has to be changed.
 const uint16_t c_EepromOffset = 0;
 
-const bool              m_DeviceIdsUsed = true;
-const bool              m_MessageIdUsed = true;
-const bool              m_TimestampUsed = false;
-const uint32_t          m_DeviceId      = 0x63691401;
-const EStucChecksumType m_ChecksumType  = EStucChecksumType::CRC16;
+const bool                m_DeviceIdsUsed = true;
+const bool                m_MessageIdUsed = true;
+const bool                m_TimestampUsed = false;
+const uint32_t            m_DeviceId      = 0x63691401;
+const STUC::EChecksumType m_ChecksumType  = STUC::EChecksumType::CRC16;
 
 void setup ()
 {
