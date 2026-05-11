@@ -1,28 +1,33 @@
 #include <Arduino.h>
 #include <Streaming.h>
-#include <STUC.h>
-#include <StucData.h>
+
+#include <UCOP.h>
+#include <UcopData.h>
 
 const uint8_t c_BufferDefaultValue = 0xDD;
 
-STUC* m_pSTUC;
+const uint16_t c_EepromAddress = 0;
+
+UCOP* m_pUCOP = 0;
 
 uint8_t m_PayloadSendBuffer[20];
 uint8_t m_PayloadRecvBuffer[20];
 uint8_t m_SendBuffer[50];
 uint8_t m_ReceiveBuffer[80];
 
-uint32_t            m_WorkerDeviceId = 0x63691402;
-STUC::EChecksumType m_ChecksumType   = STUC::EChecksumType::CRC16;
+UCOP::EChecksumType m_ChecksumType   = UCOP::EChecksumType::CRC16;
 
 uint16_t  m_ReceiveBufferWriteIndex = 0;
 uint16_t  m_ReceiveBufferReadIndex  = 0;
 bool      m_DataAvailable           = false;
 bool      m_IsWorking               = false;
-StucData  m_RequestData;
+UcopData  m_RequestData;
 
+//--------------------------------------------------------------------
 void setup ()
 {
+  EResult result;
+
   memset (m_PayloadSendBuffer, 0xFF, sizeof (m_PayloadSendBuffer));
   memset (m_PayloadRecvBuffer, 0xFF, sizeof (m_PayloadRecvBuffer));
   memset (m_SendBuffer       , 0xFF, sizeof (m_SendBuffer));
@@ -41,14 +46,11 @@ void setup ()
   Serial << F("ReceiveBuffer     Addr=") << _HEX4((uint16_t)m_ReceiveBuffer)     << " Len=" << sizeof (m_ReceiveBuffer) << endl;
   Memory_PrintLn (m_ReceiveBuffer, sizeof (m_ReceiveBuffer));
 
-  EResult result;
-  m_pSTUC = new STUC (true, true, false, m_WorkerDeviceId, m_ChecksumType, result);
-  Serial << F("STUC.ctor() result=") << STUC::GetResultText (result) << endl;
-
-  m_RequestData.SetPayloadInfo (m_PayloadRecvBuffer,
-                                sizeof (m_PayloadRecvBuffer));
+  m_pUCOP = new UCOP (c_EepromAddress, result);
+  Serial << F("UCOP.ctor() result=") << UCOP::GetResultText (result) << endl;
 }
 
+//--------------------------------------------------------------------
 void loop ()
 {
   EResult result;
@@ -75,29 +77,32 @@ void loop ()
   if (m_DataAvailable
   &&  !m_IsWorking)
   {
-    STUC::EMessageType  requestMessageType   = STUC::EMessageType::None;
-    uint8_t             requestMessageLength = 0;
+    bool     receivedMessageTypeIsReply = false;
+    uint8_t  receivedMessageLength      = 0;
+    UcopData receivedData;
+    receivedData.SetPayloadInfo (m_PayloadRecvBuffer,
+                                 sizeof (m_PayloadRecvBuffer));
 
     // Analyse message in the received data
-    result = m_pSTUC->AnalyseMessage (m_ReceiveBuffer,
+    result = m_pUCOP->AnalyseMessage (m_ReceiveBuffer,
                                       sizeof (m_ReceiveBuffer),
                                       m_ReceiveBufferReadIndex,
-                                      m_RequestData,
-                                      requestMessageType,
-                                      requestMessageLength);
-    Serial << F("STUC.AnalyseMessage() result=") << STUC::GetResultText (result) << endl;
+                                      receivedData,
+                                      receivedMessageTypeIsReply,
+                                      receivedMessageLength);
+    Serial << F("UCOP.AnalyseMessage() result=") << UCOP::GetResultText (result) << endl;
 
-    Serial << F("Message Type:        ") << (uint8_t)requestMessageType           << endl;
-    Serial << F("Action:              ") << (uint8_t)m_RequestData.Action         << endl;
-    Serial << F("Remote Device Id:    ") << _HEX8 (m_RequestData.RemoteDeviceId)  << endl;
-    Serial << F("Message Id:          ") << m_RequestData.MessageId               << endl;
-    Serial << F("Timestamp:           ") << m_RequestData.Timestamp               << endl;
-    Serial << F("CommandId:           ") << m_RequestData.CommandId               << endl;
-    Serial << F("Result:              ") << (uint8_t)m_RequestData.MessageResult  << endl;
-    Serial << F("Payload Data Length: ") << m_RequestData.PayloadLength           << endl;
-    Serial << F("Message Length:      ") << requestMessageLength                  << endl;
+    Serial << F("Message Type is Reply: ") << receivedMessageTypeIsReply          << endl;
+    Serial << F("Action is Write:       ") << receivedData.ActionIsWrite          << endl;
+    Serial << F("Remote Device Id:      ") << _HEX8 (receivedData.RemoteDeviceId) << endl;
+    Serial << F("Message Id:            ") << receivedData.MessageId              << endl;
+    Serial << F("Timestamp:             ") << receivedData.Timestamp              << endl;
+    Serial << F("CommandId:             ") << receivedData.CommandId              << endl;
+    Serial << F("Result:                ") << (uint8_t)receivedData.MessageResult << endl;
+    Serial << F("Payload Data Length:   ") << receivedData.PayloadLength          << endl;
+    Serial << F("Message Length:        ") << receivedMessageLength               << endl;
 
-    Serial << F("PayloadRecvBuffer: bytes used = ") << m_RequestData.PayloadLength << endl;
+    Serial << F("PayloadRecvBuffer: bytes used = ") << receivedData.PayloadLength << endl;
     Memory_PrintLn (m_PayloadRecvBuffer, sizeof (m_PayloadRecvBuffer));
 
     if (result == EResult::SUCCESS)
@@ -105,12 +110,20 @@ void loop ()
       RingBuffer_SetValueBackward (m_ReceiveBuffer,
                                    sizeof (m_ReceiveBuffer),
                                    m_ReceiveBufferReadIndex,
-                                   requestMessageLength,
+                                   receivedMessageLength,
                                    c_BufferDefaultValue);
       Serial << F("ReceiveBuffer:") << endl;
       Memory_PrintLn (m_ReceiveBuffer, sizeof (m_ReceiveBuffer));
 
-      m_IsWorking = true;
+      if (receivedMessageTypeIsReply)
+      {
+        Serial << F("Message is a request. Start working...");
+        m_IsWorking = true;
+      }
+      else
+      {
+        Serial << F("Message is no request. Nothing to do.");
+      }
     }
     else
       m_DataAvailable = false;
@@ -127,20 +140,20 @@ void loop ()
     Serial << F("PayloadSendBuffer:") << endl;
     Memory_PrintLn (m_PayloadSendBuffer, sizeof (m_PayloadSendBuffer));
 
-    StucData replyData = StucData (m_RequestData.Action,
+    UcopData replyData = UcopData (m_RequestData.ActionIsWrite,
                                    m_RequestData.RemoteDeviceId,
                                    m_RequestData.MessageId,
                                    m_RequestData.Timestamp,
                                    m_RequestData.CommandId,
-                                   STUC::EMessageResult::Success);
+                                   UCOP::EMessageResult::Success);
     replyData.SetPayloadInfo (m_PayloadSendBuffer, sizeof (m_PayloadSendBuffer), m_RequestData.PayloadLength);
 
     uint16_t replyMessageLength = 0;
-    result = m_pSTUC->ComposeReply (replyData,
+    result = m_pUCOP->ComposeReply (replyData,
                                     m_SendBuffer,
                                     sizeof (m_SendBuffer),
                                     replyMessageLength);
-    Serial << F("STUC.ComposeReply() result=") << STUC::GetResultText (result) << endl;
+    Serial << F("UCOP.ComposeReply() result=") << UCOP::GetResultText (result) << endl;
 
     Serial << F("SendBuffer: bytes used = ") << replyMessageLength << endl;
     Memory_PrintLn (m_SendBuffer, sizeof (m_SendBuffer));
