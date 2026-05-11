@@ -13,6 +13,7 @@ const float     c_ValueF_1  = 678.9123;
 const float     c_ValueF_2  = NAN;  // 0x7fc00000
 
 const uint16_t  c_EepromOffset = 0;
+const uint16_t  c_EepromShowLength = 0x40;
 
 void setup ()
 {
@@ -23,7 +24,7 @@ void setup ()
   for (uint16_t index = 0; index < EEPROM.length (); index++)
     EEPROM.update (index, 0xFF);
 
-  ShowEepromContent ();
+  ShowEepromContent (c_EepromShowLength);
 
   uint16_t eepromAddress = c_EepromOffset;
 
@@ -39,7 +40,7 @@ void setup ()
   EEPROM.put (eepromAddress, c_ValueB_T); eepromAddress += sizeof (c_ValueB_T);
   Serial << "2x BOOL (" << c_ValueB_F << ", " << c_ValueB_T << ") via put: " << (eepromAddress - eepromStartAddress) << " bytes." << endl;
 
-  ShowEepromContent ();
+  ShowEepromContent (c_EepromShowLength);
 
   eepromStartAddress = eepromAddress;
   for (uint8_t index = 0; index < sizeof (c_ValueUI8); index++)
@@ -56,7 +57,7 @@ void setup ()
   EEPROM.put (eepromAddress, c_ValueUI32); eepromAddress += sizeof (c_ValueUI32);
   Serial << "UInt8 (" << c_ValueUI8 << " = 0x" << _HEX2(c_ValueUI8) << "), UInt16 (" << c_ValueUI16 << " = 0x" << _HEX4(c_ValueUI16) << "), UInt32 (" << c_ValueUI32 << " = 0x" << _HEX8(c_ValueUI32) << ") via put: " << (eepromAddress - eepromStartAddress) << " bytes." << endl;
 
-  ShowEepromContent ();
+  ShowEepromContent (c_EepromShowLength);
 
   eepromStartAddress = eepromAddress;
   for (uint8_t index = 0; index < sizeof (c_ValueI8); index++)
@@ -73,7 +74,7 @@ void setup ()
   EEPROM.put (eepromAddress, c_ValueI32); eepromAddress += sizeof (c_ValueI32);
   Serial << "Int8 (" << c_ValueI8 << " = 0x" << _HEX2(c_ValueI8) << "), Int16 (" << c_ValueI16 << " = 0x" << _HEX4(c_ValueI16) << "), Int32 (" << c_ValueI32 << " = 0x" << _HEX8(c_ValueI32) << ") via put: " << (eepromAddress - eepromStartAddress) << " bytes." << endl;
 
-  ShowEepromContent ();
+  ShowEepromContent (c_EepromShowLength);
 
   eepromStartAddress = eepromAddress;
   for (uint8_t index = 0; index < sizeof (c_ValueF_1); index++)
@@ -87,17 +88,17 @@ void setup ()
   EEPROM.put (eepromAddress, c_ValueF_2); eepromAddress += sizeof (c_ValueF_2);
   Serial << "2x Float (" << c_ValueF_1 << ", " << c_ValueF_2 << ") via put: " << (eepromAddress - eepromStartAddress) << " bytes." << endl;
 
-  ShowEepromContent ();
+  ShowEepromContent (c_EepromShowLength);
 }
 
 void loop () 
 {
 }
 
-void ShowEepromContent ()
+void ShowEepromContent (uint16_t i_Length)
 {
-  Serial << "EEPROM content (0..255):";
-  for (uint16_t index = 0; index < 0x100; index++)
+  Serial << "EEPROM content (0.." << (i_Length - 1) << "):";
+  for (uint16_t index = 0; index < i_Length; index++)
   {
     if (index % 8 == 0)
       Serial << "  ";
