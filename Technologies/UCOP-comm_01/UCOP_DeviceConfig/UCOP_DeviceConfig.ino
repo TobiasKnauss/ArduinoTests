@@ -17,28 +17,28 @@ void setup ()
   delay (2000);
 
   EResult result;
-  UCOP stuc = UCOP (c_EepromOffset, result);
+  UCOP ucop = UCOP (c_EepromOffset, result);
   Serial << "UCOP ctor, EEPROM READ, Result: " << (int)result << " = " << UCOP::GetResultText (result) << endl;
-  stuc.PrintConfig ();
+  ucop.PrintConfig ();
 
   if (!c_WriteConfig)
     return;
 
-  stuc = UCOP (m_DeviceIdsUsed,
+  ucop = UCOP (m_DeviceIdsUsed,
                m_MessageIdUsed,
                m_TimestampUsed,
                m_DeviceId,
                m_ChecksumType,
                result);
   Serial << "UCOP ctor, new config, Result: " << (int)result << " = " << UCOP::GetResultText (result) << endl;
-  stuc.PrintConfig ();
+  ucop.PrintConfig ();
 
-  result = stuc.WriteConfigToEEPROM (c_EepromOffset);
+  result = ucop.WriteConfigToEEPROM (c_EepromOffset);
   Serial << "UCOP WriteConfigToEEPROM, EEPROM WRITE, Result: " << (int)result << " = " << UCOP::GetResultText (result) << endl;
 
-  stuc = UCOP (c_EepromOffset, result);
+  ucop = UCOP (c_EepromOffset, result);
   Serial << "UCOP ctor, EEPROM READ, Result: " << (int)result << " = " << UCOP::GetResultText (result) << endl;
-  stuc.PrintConfig ();
+  ucop.PrintConfig ();
 }
 
 void loop ()

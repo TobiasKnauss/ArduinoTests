@@ -2,7 +2,7 @@
 #include <Streaming.h>
 
 #include <UCOP.h>
-#include <UcopData.h>
+#include <UCOPData.h>
 
 const uint8_t c_BufferDefaultValue = 0xDD;
 
@@ -21,7 +21,7 @@ uint16_t  m_ReceiveBufferWriteIndex = 0;
 uint16_t  m_ReceiveBufferReadIndex  = 0;
 bool      m_DataAvailable           = false;
 bool      m_IsWorking               = false;
-UcopData  m_RequestData;
+UCOPData  m_RequestData;
 
 //--------------------------------------------------------------------
 void setup ()
@@ -79,7 +79,7 @@ void loop ()
   {
     bool     receivedMessageTypeIsReply = false;
     uint8_t  receivedMessageLength      = 0;
-    UcopData receivedData;
+    UCOPData receivedData;
     receivedData.SetPayloadInfo (m_PayloadRecvBuffer,
                                  sizeof (m_PayloadRecvBuffer));
 
@@ -107,7 +107,7 @@ void loop ()
 
     if (result == EResult::SUCCESS)
     {
-      RingBuffer_SetValueBackward (m_ReceiveBuffer,
+      RingBuffer_SetValue_FromEnd (m_ReceiveBuffer,
                                    sizeof (m_ReceiveBuffer),
                                    m_ReceiveBufferReadIndex,
                                    receivedMessageLength,
@@ -140,7 +140,7 @@ void loop ()
     Serial << F("PayloadSendBuffer:") << endl;
     Memory_PrintLn (m_PayloadSendBuffer, sizeof (m_PayloadSendBuffer));
 
-    UcopData replyData = UcopData (m_RequestData.ActionIsWrite,
+    UCOPData replyData = UCOPData (m_RequestData.ActionIsWrite,
                                    m_RequestData.RemoteDeviceId,
                                    m_RequestData.MessageId,
                                    m_RequestData.Timestamp,
