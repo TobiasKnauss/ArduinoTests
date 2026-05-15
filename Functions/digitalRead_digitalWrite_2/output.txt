@@ -1,0 +1,515 @@
+Set pin mode 0 (INPUT).  Get pin mode 0 (INPUT).
+Set pin mode 2 (INPUT_PULLUP).  Get pin mode 2 (INPUT_PULLUP).
+Set pin mode 1 (OUTPUT).  Get pin mode 1 (OUTPUT).
+Set pin mode 0 (INPUT).  Get pin mode 0 (INPUT).
+Set pin mode 1 (OUTPUT).  Get pin mode 1 (OUTPUT).
+Set pin mode 2 (INPUT_PULLUP).  Get pin mode 2 (INPUT_PULLUP).
+Set pin mode 3 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 4 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 5 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 6 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 7 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 8 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 9 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 10 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 11 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 12 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 13 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 14 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 15 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 16 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 17 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 18 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 19 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 20 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 21 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 22 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 23 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 24 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 25 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 26 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 27 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 28 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 29 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 30 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 31 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 32 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 33 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 34 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 35 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 36 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 37 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 38 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 39 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 40 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 41 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 42 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 43 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 44 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 45 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 46 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 47 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 48 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 49 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 50 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 51 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 52 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 53 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 54 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 55 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 56 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 57 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 58 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 59 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 60 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 61 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 62 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 63 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 64 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 65 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 66 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 67 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 68 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 69 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 70 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 71 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 72 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 73 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 74 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 75 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 76 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 77 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 78 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 79 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 80 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 81 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 82 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 83 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 84 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 85 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 86 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 87 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 88 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 89 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 90 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 91 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 92 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 93 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 94 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 95 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 96 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 97 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 98 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 99 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 100 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 101 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 102 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 103 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 104 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 105 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 106 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 107 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 108 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 109 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 110 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 111 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 112 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 113 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 114 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 115 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 116 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 117 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 118 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 119 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 120 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 121 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 122 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 123 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 124 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 125 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 126 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 127 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 128 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 129 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 130 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 131 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 132 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 133 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 134 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 135 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 136 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 137 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 138 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 139 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 140 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 141 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 142 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 143 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 144 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 145 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 146 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 147 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 148 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 149 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 150 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 151 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 152 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 153 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 154 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 155 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 156 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 157 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 158 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 159 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 160 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 161 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 162 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 163 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 164 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 165 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 166 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 167 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 168 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 169 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 170 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 171 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 172 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 173 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 174 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 175 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 176 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 177 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 178 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 179 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 180 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 181 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 182 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 183 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 184 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 185 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 186 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 187 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 188 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 189 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 190 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 191 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 192 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 193 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 194 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 195 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 196 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 197 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 198 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 199 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 200 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 201 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 202 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 203 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 204 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 205 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 206 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 207 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 208 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 209 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 210 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 211 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 212 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 213 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 214 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 215 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 216 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 217 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 218 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 219 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 220 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 221 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 222 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 223 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 224 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 225 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 226 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 227 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 228 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 229 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 230 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 231 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 232 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 233 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 234 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 235 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 236 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 237 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 238 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 239 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 240 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 241 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 242 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 243 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 244 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 245 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 246 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 247 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 248 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 249 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 250 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 251 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 252 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 253 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 254 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+Set pin mode 255 (UNKNOWN).  Get pin mode 1 (OUTPUT).
+write 0, read 0.  write 0, read 0.
+write 1, read 1.  write 0, read 0.
+write 2, read 1.  write 0, read 0.
+write 3, read 1.  write 0, read 0.
+write 4, read 1.  write 0, read 0.
+write 5, read 1.  write 0, read 0.
+write 6, read 1.  write 0, read 0.
+write 7, read 1.  write 0, read 0.
+write 8, read 1.  write 0, read 0.
+write 9, read 1.  write 0, read 0.
+write 10, read 1.  write 0, read 0.
+write 11, read 1.  write 0, read 0.
+write 12, read 1.  write 0, read 0.
+write 13, read 1.  write 0, read 0.
+write 14, read 1.  write 0, read 0.
+write 15, read 1.  write 0, read 0.
+write 16, read 1.  write 0, read 0.
+write 17, read 1.  write 0, read 0.
+write 18, read 1.  write 0, read 0.
+write 19, read 1.  write 0, read 0.
+write 20, read 1.  write 0, read 0.
+write 21, read 1.  write 0, read 0.
+write 22, read 1.  write 0, read 0.
+write 23, read 1.  write 0, read 0.
+write 24, read 1.  write 0, read 0.
+write 25, read 1.  write 0, read 0.
+write 26, read 1.  write 0, read 0.
+write 27, read 1.  write 0, read 0.
+write 28, read 1.  write 0, read 0.
+write 29, read 1.  write 0, read 0.
+write 30, read 1.  write 0, read 0.
+write 31, read 1.  write 0, read 0.
+write 32, read 1.  write 0, read 0.
+write 33, read 1.  write 0, read 0.
+write 34, read 1.  write 0, read 0.
+write 35, read 1.  write 0, read 0.
+write 36, read 1.  write 0, read 0.
+write 37, read 1.  write 0, read 0.
+write 38, read 1.  write 0, read 0.
+write 39, read 1.  write 0, read 0.
+write 40, read 1.  write 0, read 0.
+write 41, read 1.  write 0, read 0.
+write 42, read 1.  write 0, read 0.
+write 43, read 1.  write 0, read 0.
+write 44, read 1.  write 0, read 0.
+write 45, read 1.  write 0, read 0.
+write 46, read 1.  write 0, read 0.
+write 47, read 1.  write 0, read 0.
+write 48, read 1.  write 0, read 0.
+write 49, read 1.  write 0, read 0.
+write 50, read 1.  write 0, read 0.
+write 51, read 1.  write 0, read 0.
+write 52, read 1.  write 0, read 0.
+write 53, read 1.  write 0, read 0.
+write 54, read 1.  write 0, read 0.
+write 55, read 1.  write 0, read 0.
+write 56, read 1.  write 0, read 0.
+write 57, read 1.  write 0, read 0.
+write 58, read 1.  write 0, read 0.
+write 59, read 1.  write 0, read 0.
+write 60, read 1.  write 0, read 0.
+write 61, read 1.  write 0, read 0.
+write 62, read 1.  write 0, read 0.
+write 63, read 1.  write 0, read 0.
+write 64, read 1.  write 0, read 0.
+write 65, read 1.  write 0, read 0.
+write 66, read 1.  write 0, read 0.
+write 67, read 1.  write 0, read 0.
+write 68, read 1.  write 0, read 0.
+write 69, read 1.  write 0, read 0.
+write 70, read 1.  write 0, read 0.
+write 71, read 1.  write 0, read 0.
+write 72, read 1.  write 0, read 0.
+write 73, read 1.  write 0, read 0.
+write 74, read 1.  write 0, read 0.
+write 75, read 1.  write 0, read 0.
+write 76, read 1.  write 0, read 0.
+write 77, read 1.  write 0, read 0.
+write 78, read 1.  write 0, read 0.
+write 79, read 1.  write 0, read 0.
+write 80, read 1.  write 0, read 0.
+write 81, read 1.  write 0, read 0.
+write 82, read 1.  write 0, read 0.
+write 83, read 1.  write 0, read 0.
+write 84, read 1.  write 0, read 0.
+write 85, read 1.  write 0, read 0.
+write 86, read 1.  write 0, read 0.
+write 87, read 1.  write 0, read 0.
+write 88, read 1.  write 0, read 0.
+write 89, read 1.  write 0, read 0.
+write 90, read 1.  write 0, read 0.
+write 91, read 1.  write 0, read 0.
+write 92, read 1.  write 0, read 0.
+write 93, read 1.  write 0, read 0.
+write 94, read 1.  write 0, read 0.
+write 95, read 1.  write 0, read 0.
+write 96, read 1.  write 0, read 0.
+write 97, read 1.  write 0, read 0.
+write 98, read 1.  write 0, read 0.
+write 99, read 1.  write 0, read 0.
+write 100, read 1.  write 0, read 0.
+write 101, read 1.  write 0, read 0.
+write 102, read 1.  write 0, read 0.
+write 103, read 1.  write 0, read 0.
+write 104, read 1.  write 0, read 0.
+write 105, read 1.  write 0, read 0.
+write 106, read 1.  write 0, read 0.
+write 107, read 1.  write 0, read 0.
+write 108, read 1.  write 0, read 0.
+write 109, read 1.  write 0, read 0.
+write 110, read 1.  write 0, read 0.
+write 111, read 1.  write 0, read 0.
+write 112, read 1.  write 0, read 0.
+write 113, read 1.  write 0, read 0.
+write 114, read 1.  write 0, read 0.
+write 115, read 1.  write 0, read 0.
+write 116, read 1.  write 0, read 0.
+write 117, read 1.  write 0, read 0.
+write 118, read 1.  write 0, read 0.
+write 119, read 1.  write 0, read 0.
+write 120, read 1.  write 0, read 0.
+write 121, read 1.  write 0, read 0.
+write 122, read 1.  write 0, read 0.
+write 123, read 1.  write 0, read 0.
+write 124, read 1.  write 0, read 0.
+write 125, read 1.  write 0, read 0.
+write 126, read 1.  write 0, read 0.
+write 127, read 1.  write 0, read 0.
+write 128, read 1.  write 0, read 0.
+write 129, read 1.  write 0, read 0.
+write 130, read 1.  write 0, read 0.
+write 131, read 1.  write 0, read 0.
+write 132, read 1.  write 0, read 0.
+write 133, read 1.  write 0, read 0.
+write 134, read 1.  write 0, read 0.
+write 135, read 1.  write 0, read 0.
+write 136, read 1.  write 0, read 0.
+write 137, read 1.  write 0, read 0.
+write 138, read 1.  write 0, read 0.
+write 139, read 1.  write 0, read 0.
+write 140, read 1.  write 0, read 0.
+write 141, read 1.  write 0, read 0.
+write 142, read 1.  write 0, read 0.
+write 143, read 1.  write 0, read 0.
+write 144, read 1.  write 0, read 0.
+write 145, read 1.  write 0, read 0.
+write 146, read 1.  write 0, read 0.
+write 147, read 1.  write 0, read 0.
+write 148, read 1.  write 0, read 0.
+write 149, read 1.  write 0, read 0.
+write 150, read 1.  write 0, read 0.
+write 151, read 1.  write 0, read 0.
+write 152, read 1.  write 0, read 0.
+write 153, read 1.  write 0, read 0.
+write 154, read 1.  write 0, read 0.
+write 155, read 1.  write 0, read 0.
+write 156, read 1.  write 0, read 0.
+write 157, read 1.  write 0, read 0.
+write 158, read 1.  write 0, read 0.
+write 159, read 1.  write 0, read 0.
+write 160, read 1.  write 0, read 0.
+write 161, read 1.  write 0, read 0.
+write 162, read 1.  write 0, read 0.
+write 163, read 1.  write 0, read 0.
+write 164, read 1.  write 0, read 0.
+write 165, read 1.  write 0, read 0.
+write 166, read 1.  write 0, read 0.
+write 167, read 1.  write 0, read 0.
+write 168, read 1.  write 0, read 0.
+write 169, read 1.  write 0, read 0.
+write 170, read 1.  write 0, read 0.
+write 171, read 1.  write 0, read 0.
+write 172, read 1.  write 0, read 0.
+write 173, read 1.  write 0, read 0.
+write 174, read 1.  write 0, read 0.
+write 175, read 1.  write 0, read 0.
+write 176, read 1.  write 0, read 0.
+write 177, read 1.  write 0, read 0.
+write 178, read 1.  write 0, read 0.
+write 179, read 1.  write 0, read 0.
+write 180, read 1.  write 0, read 0.
+write 181, read 1.  write 0, read 0.
+write 182, read 1.  write 0, read 0.
+write 183, read 1.  write 0, read 0.
+write 184, read 1.  write 0, read 0.
+write 185, read 1.  write 0, read 0.
+write 186, read 1.  write 0, read 0.
+write 187, read 1.  write 0, read 0.
+write 188, read 1.  write 0, read 0.
+write 189, read 1.  write 0, read 0.
+write 190, read 1.  write 0, read 0.
+write 191, read 1.  write 0, read 0.
+write 192, read 1.  write 0, read 0.
+write 193, read 1.  write 0, read 0.
+write 194, read 1.  write 0, read 0.
+write 195, read 1.  write 0, read 0.
+write 196, read 1.  write 0, read 0.
+write 197, read 1.  write 0, read 0.
+write 198, read 1.  write 0, read 0.
+write 199, read 1.  write 0, read 0.
+write 200, read 1.  write 0, read 0.
+write 201, read 1.  write 0, read 0.
+write 202, read 1.  write 0, read 0.
+write 203, read 1.  write 0, read 0.
+write 204, read 1.  write 0, read 0.
+write 205, read 1.  write 0, read 0.
+write 206, read 1.  write 0, read 0.
+write 207, read 1.  write 0, read 0.
+write 208, read 1.  write 0, read 0.
+write 209, read 1.  write 0, read 0.
+write 210, read 1.  write 0, read 0.
+write 211, read 1.  write 0, read 0.
+write 212, read 1.  write 0, read 0.
+write 213, read 1.  write 0, read 0.
+write 214, read 1.  write 0, read 0.
+write 215, read 1.  write 0, read 0.
+write 216, read 1.  write 0, read 0.
+write 217, read 1.  write 0, read 0.
+write 218, read 1.  write 0, read 0.
+write 219, read 1.  write 0, read 0.
+write 220, read 1.  write 0, read 0.
+write 221, read 1.  write 0, read 0.
+write 222, read 1.  write 0, read 0.
+write 223, read 1.  write 0, read 0.
+write 224, read 1.  write 0, read 0.
+write 225, read 1.  write 0, read 0.
+write 226, read 1.  write 0, read 0.
+write 227, read 1.  write 0, read 0.
+write 228, read 1.  write 0, read 0.
+write 229, read 1.  write 0, read 0.
+write 230, read 1.  write 0, read 0.
+write 231, read 1.  write 0, read 0.
+write 232, read 1.  write 0, read 0.
+write 233, read 1.  write 0, read 0.
+write 234, read 1.  write 0, read 0.
+write 235, read 1.  write 0, read 0.
+write 236, read 1.  write 0, read 0.
+write 237, read 1.  write 0, read 0.
+write 238, read 1.  write 0, read 0.
+write 239, read 1.  write 0, read 0.
+write 240, read 1.  write 0, read 0.
+write 241, read 1.  write 0, read 0.
+write 242, read 1.  write 0, read 0.
+write 243, read 1.  write 0, read 0.
+write 244, read 1.  write 0, read 0.
+write 245, read 1.  write 0, read 0.
+write 246, read 1.  write 0, read 0.
+write 247, read 1.  write 0, read 0.
+write 248, read 1.  write 0, read 0.
+write 249, read 1.  write 0, read 0.
+write 250, read 1.  write 0, read 0.
+write 251, read 1.  write 0, read 0.
+write 252, read 1.  write 0, read 0.
+write 253, read 1.  write 0, read 0.
+write 254, read 1.  write 0, read 0.
+write 255, read 1.  write 0, read 0.
