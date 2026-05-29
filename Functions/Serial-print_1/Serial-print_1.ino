@@ -1,72 +1,147 @@
-// source: https://docs.arduino.cc/language-reference/en/functions/communication/serial/print/
+void printHEX_m64_0 ()
+{
+  Serial.print("ASCII\t");
+  Serial.print("i8:DEC\ti16:DEC\ti32:DEC\t");
+  Serial.print("i8:X  \ti16:X  \ti32:X  \t\t");
+  Serial.print("i8:X2 \ti16:X2 \ti32:X2 \t\t");
+  Serial.print("i8:X4 \ti16:X4 \ti32:X4 \t\t");
+  Serial.print("i8:X8\t\ti16:X8\t\ti32:X8\t\t");
+  Serial.print("OCT");
 
-/*
-  Uses a for loop to print numbers in various formats.
-*/
+  Serial.println();
+  for (char c = -64; c < 0; c++)
+  {
+    int8_t  i8  = c;
+    int16_t i16 = c;
+    int32_t i32 = c;
+
+    Serial.print(i8); // print as an ASCII-encoded decimal - same as "DEC"
+    Serial.print("\t");
+
+    Serial.print(i8, DEC);  Serial.print("\t"); Serial.print(i16, DEC);  Serial.print("\t"); Serial.print(i32, DEC);  Serial.print("\t"); // print as an ASCII-encoded decimal
+    Serial.print(i8, HEX);  Serial.print("\t"); Serial.print(i16, HEX);  Serial.print("\t"); Serial.print(i32, HEX);  Serial.print("\t"); // print as an ASCII-encoded hexadecimal
+    Serial.print(i8, HEX2); Serial.print("\t"); Serial.print(i16, HEX2); Serial.print("\t"); Serial.print(i32, HEX2); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 2 digits
+    Serial.print(i8, HEX4); Serial.print("\t"); Serial.print(i16, HEX4); Serial.print("\t"); Serial.print(i32, HEX4); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 4 digits
+    Serial.print(i8, HEX8); Serial.print("\t"); Serial.print(i16, HEX8); Serial.print("\t"); Serial.print(i32, HEX8); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 8 digits
+    Serial.print(i16, OCT); Serial.println(); // print as an ASCII-encoded octal
+
+    delay(200);
+  }
+  Serial.println(); // prints another carriage return
+}
+
+void printHEX_0_96 ()
+{
+  Serial.print("ASCII\t");
+  Serial.print("i8:DEC\ti16:DEC\ti32:DEC\t");
+  Serial.print("i8:X  \ti16:X  \ti32:X  \t");
+  Serial.print("i8:X2 \ti16:X2 \ti32:X2 \t");
+  Serial.print("i8:X4 \ti16:X4 \ti32:X4 \t");
+  Serial.print("i8:X8\t\ti16:X8\t\ti32:X8\t\t");
+  Serial.print("OCT");
+
+  Serial.println();
+  for (char c = 0; c < 96; c++)
+  {
+    int8_t  i8  = c;
+    int16_t i16 = c;
+    int32_t i32 = c;
+
+    Serial.print(i8); // print as an ASCII-encoded decimal - same as "DEC"
+    if (c >= 32)
+    { Serial.print (": "); Serial.print (c); } // print the ASCII character
+    Serial.print("\t");
+
+    Serial.print(i8, DEC);  Serial.print("\t"); Serial.print(i16, DEC);  Serial.print("\t"); Serial.print(i32, DEC);  Serial.print("\t"); // print as an ASCII-encoded decimal
+    Serial.print(i8, HEX);  Serial.print("\t"); Serial.print(i16, HEX);  Serial.print("\t"); Serial.print(i32, HEX);  Serial.print("\t"); // print as an ASCII-encoded hexadecimal
+    Serial.print(i8, HEX2); Serial.print("\t"); Serial.print(i16, HEX2); Serial.print("\t"); Serial.print(i32, HEX2); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 2 digits
+    Serial.print(i8, HEX4); Serial.print("\t"); Serial.print(i16, HEX4); Serial.print("\t"); Serial.print(i32, HEX4); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 4 digits
+    Serial.print(i8, HEX8); Serial.print("\t"); Serial.print(i16, HEX8); Serial.print("\t"); Serial.print(i32, HEX8); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 8 digits
+    Serial.print(i16, OCT); Serial.println(); // print as an ASCII-encoded octal
+
+    delay(200);
+  }
+  Serial.println(); // prints another carriage return
+}
+
+void printBIN_m64_0 ()
+{
+  Serial.print("ASCII\t");
+  Serial.print("i8:B  \t\ti16:B  \t\t\ti32:B  \t\t\t\t\t");
+  Serial.print("i8:B2 \t\ti16:B2 \t\t\ti32:B2 \t\t\t\t\t");
+  Serial.print("i8:B4 \t\ti16:B4 \t\t\ti32:B4 \t\t\t\t\t");
+  Serial.print("i8:B8 \t\ti16:B8 \t\t\ti32:B8 \t\t\t\t\t");
+  Serial.print("i8:B16\t\t\ti16:B16\t\t\ti32:B16\t\t\t\t\t");
+  Serial.print("i8:B32\t\t\t\t\ti16:B32\t\t\t\t\ti32:B32");
+
+  Serial.println();
+  for (char c = -64; c < 0; c++)
+  {
+    int8_t  i8  = c;
+    int16_t i16 = c;
+    int32_t i32 = c;
+
+    Serial.print(i8); // print as an ASCII-encoded decimal - same as "DEC"
+    Serial.print("\t");
+
+    Serial.print(i8, BIN);   Serial.print("\t"); Serial.print(i16, BIN);   Serial.print("\t"); Serial.print(i32, BIN);   Serial.print("\t"); // print as an ASCII-encoded hexadecimal
+    Serial.print(i8, BIN2);  Serial.print("\t"); Serial.print(i16, BIN2);  Serial.print("\t"); Serial.print(i32, BIN2);  Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 2 digits
+    Serial.print(i8, BIN4);  Serial.print("\t"); Serial.print(i16, BIN4);  Serial.print("\t"); Serial.print(i32, BIN4);  Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 4 digits
+    Serial.print(i8, BIN8);  Serial.print("\t"); Serial.print(i16, BIN8);  Serial.print("\t"); Serial.print(i32, BIN8);  Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 8 digits
+    Serial.print(i8, BIN16); Serial.print("\t"); Serial.print(i16, BIN16); Serial.print("\t"); Serial.print(i32, BIN16); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 16 digits
+    Serial.print(i8, BIN32); Serial.print("\t"); Serial.print(i16, BIN32); Serial.print("\t"); Serial.print(i32, BIN32); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 32 digits
+    Serial.println();
+
+    delay(200);
+  }
+  Serial.println(); // prints another carriage return
+}
+
+void printBIN_0_96 ()
+{
+  Serial.print("ASCII\t");
+  Serial.print("i8:B  \ti16:B  \ti32:B  \t");
+  Serial.print("i8:B2 \ti16:B2 \ti32:B2 \t");
+  Serial.print("i8:B4 \ti16:B4 \ti32:B4 \t");
+  Serial.print("i8:B8 \t\ti16:B8 \t\ti32:B8 \t\t");
+  Serial.print("i8:B16\t\t\ti16:B16\t\t\ti32:B16\t\t\t");
+  Serial.print("i8:B32\t\t\t\t\ti16:B32\t\t\t\t\ti32:B32");
+
+  Serial.println();
+  for (char c = 0; c < 96; c++)
+  {
+    int8_t  i8  = c;
+    int16_t i16 = c;
+    int32_t i32 = c;
+
+    Serial.print(i8); // print as an ASCII-encoded decimal - same as "DEC"
+    if (c >= 32)
+    { Serial.print (": "); Serial.print (c); } // print the ASCII character
+    Serial.print("\t");
+
+    Serial.print(i8, BIN);   Serial.print("\t"); Serial.print(i16, BIN);   Serial.print("\t"); Serial.print(i32, BIN);   Serial.print("\t"); // print as an ASCII-encoded hexadecimal
+    Serial.print(i8, BIN2);  Serial.print("\t"); Serial.print(i16, BIN2);  Serial.print("\t"); Serial.print(i32, BIN2);  Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 2 digits
+    Serial.print(i8, BIN4);  Serial.print("\t"); Serial.print(i16, BIN4);  Serial.print("\t"); Serial.print(i32, BIN4);  Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 4 digits
+    Serial.print(i8, BIN8);  Serial.print("\t"); Serial.print(i16, BIN8);  Serial.print("\t"); Serial.print(i32, BIN8);  Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 8 digits
+    Serial.print(i8, BIN16); Serial.print("\t"); Serial.print(i16, BIN16); Serial.print("\t"); Serial.print(i32, BIN16); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 16 digits
+    Serial.print(i8, BIN32); Serial.print("\t"); Serial.print(i16, BIN32); Serial.print("\t"); Serial.print(i32, BIN32); Serial.print("\t"); // print as an ASCII-encoded hexadecimal with at least 32 digits
+    Serial.println();
+
+    delay(200);
+  }
+  Serial.println(); // prints another carriage return
+}
+
 void setup()
 {
   Serial.begin(9600); // open the serial port at 9600 bps:
+  delay (2000);
 }
 
-void loop()
+void loop ()
 {
-  // print labels
-  Serial.print("NO FORMAT"); // prints a label 
-  Serial.print("\t"); // prints a tab
-  Serial.print("DEC"); 
-  Serial.print("\t");
-  Serial.print("HEX"); 
-  Serial.print("\t");
-  Serial.print("HEX2"); 
-  Serial.print("\t");
-  Serial.print("HEX4"); 
-  Serial.print("\t");
-  Serial.print("HEX8"); 
-  Serial.print("\t\t");
-  Serial.print("OCT"); 
-  Serial.print("\t");
-  Serial.print("BIN");
-  Serial.print("\t");
-  Serial.print("BIN2");
-  Serial.print("\t");
-  Serial.print("BIN4");
-  Serial.print("\t");
-  Serial.print("BIN8");
-  Serial.print("\t\t");
-  Serial.print("BIN16");
-  Serial.print("\t\t\t");
-  Serial.print("BIN32");
-  Serial.println(); // carriage return after the last label
-  for (int x = 0; x < 64; x++)
-  { // only part of the ASCII chart, change to suit
-    // print it out in many formats:
-    Serial.print(x); // print as an ASCII-encoded decimal - same as "DEC" 
-    Serial.print("\t\t"); // prints two tabs to accomodate the label length
-    Serial.print(x, DEC); // print as an ASCII-encoded decimal 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, HEX); // print as an ASCII-encoded hexadecimal 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, HEX2); // print as an ASCII-encoded hexadecimal 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, HEX4); // print as an ASCII-encoded hexadecimal 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, HEX8); // print as an ASCII-encoded hexadecimal 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, OCT); // print as an ASCII-encoded octal 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, BIN); // print as an ASCII-encoded binary 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, BIN2); // print as an ASCII-encoded binary 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, BIN4); // print as an ASCII-encoded binary 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, BIN8); // print as an ASCII-encoded binary 
-    Serial.print("\t"); // prints a tab
-    Serial.print(x, BIN16); // print as an ASCII-encoded binary 
-    Serial.print("\t"); // prints a tab
-    Serial.println(x, BIN32); // print as an ASCII-encoded binary 
-    // then adds the carriage return with "println"
-    delay(200); // delay 200 milliseconds
-  }
-  Serial.println(); // prints another carriage return
+  printHEX_m64_0 ();
+  printHEX_0_96 ();
+  printBIN_m64_0 ();
+  printBIN_0_96 ();
 }
